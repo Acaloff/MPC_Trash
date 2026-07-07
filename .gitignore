@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.numba_cache/
+*.nbc
+*.nbi
+.venv/
+.vscode/
+.idea/
+.DS_Store
+.omc/
