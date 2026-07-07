@@ -1,7 +1,7 @@
 # MPC Double Cart-Pole
 
 ## 요약:
-스크립트만 짰는데 클로드가 README랑 push까지 다해줌 GOAT
+기존 스크립트 2개만 짰는데 클로드가 README랑 record_demo까지 다해줌 GOAT
 
 아래 설명 있긴한데,
 
