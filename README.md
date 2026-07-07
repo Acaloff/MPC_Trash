@@ -1,11 +1,14 @@
 # MPC Double Cart-Pole
 
-Nonlinear Model Predictive Control (MPC) of a cart driving a **double pendulum**,
-with real-time target switching between all four equilibria (down-down, down-up,
-up-down, up-up). The dynamics are `@njit`-compiled for fast rollouts and the
-optimizer is warm-started, so the whole loop runs interactively.
-
-> 카트 + 2링크 진자에 대한 비선형 MPC. 키 1~4로 네 평형점을 실시간 전환하며 안정화한다.
+## 요약:
+스크립트만 짰는데 클로드가 README랑 push까지 다해줌 GOAT
+아래 설명 있긴한데,
+비선형 모델예측제어, N스텝 제어 시퀀스 벡터 공간에 대한 최적화문제 푸는 것. 이걸 망할 매 스텝마다 함
+제약조건있는 문제는 RAWLING CH 3 이상부터인데 아직 CH2까지만 배운관계로 제약은 대충걸어놓음
+다운받고 켜면 plt창 하나 뜨는데 터미널에 1~4 입력해서 각 안정점 사이 전환 가능.
+N 수정하거나 랴프노프 조건 안 만족하는 P_f로 바꿔서 실험하면 딱히 의미는 모르겠고 재밌음
+다이나믹스 저꼴난 이유는 원래는 정직하게 풀어서 RK4 박았는데 이중진자되니까 느려터짐. 클로드 딸깍으로 최적화함
+CASAdi언제배우지
 
 ![demo](assets/demo.gif)
 
